@@ -8,4 +8,11 @@ void main() {
   print('Rectangle area is $s');
 
   print('|x| ${s ~/ 5}');
+
+  int number = 51;
+
+  print('Task 2: Comparison operators');
+  print('${number > 50}');
+  print('${number < 100}');
+  print('${number % 5 == 0}');
 }
