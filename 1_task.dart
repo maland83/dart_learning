@@ -15,4 +15,11 @@ void main() {
   print('${number > 50}');
   print('${number < 100}');
   print('${number % 5 == 0}');
+
+  print('Task 3: Logical operators');
+
+  bool hasMoney = true, isStoreOpen = false;
+
+  bool we_can_buy = hasMoney && isStoreOpen;
+  bool we_must_wait = hasMoney && !isStoreOpen;
 }
