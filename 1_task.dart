@@ -31,4 +31,19 @@ void main() {
   print(weather);
   String extra = temperature < 10 ? "Дуже холодно" : "";
   print(extra);
+
+  print("Task 5: Assignment Operators");
+  double score = 0;
+
+  int correctAnswers = 17;
+  int mistakes = 3;
+  int totalQuestions = 20;
+
+  score += correctAnswers * 10;
+  score -= mistakes * 5;
+  score *= 2;
+
+  score /= totalQuestions;
+
+  print("Остаточний результат: $score");
 }
