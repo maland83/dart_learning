@@ -22,4 +22,13 @@ void main() {
 
   bool we_can_buy = hasMoney && isStoreOpen;
   bool we_must_wait = hasMoney && !isStoreOpen;
+
+  print("Task 4: Ternary operator");
+
+  int temperature = 8;
+
+  String weather = temperature > 25 ? "Тепло" : "Прохолодно";
+  print(weather);
+  String extra = temperature < 10 ? "Дуже холодно" : "";
+  print(extra);
 }
