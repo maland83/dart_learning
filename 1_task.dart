@@ -114,4 +114,17 @@ void main() {
     sum += i;
   }
   print("\nСума чисел від 1 до 10: $sum");
+
+  print("Task 9: While loop");
+
+  int number10 = 10;
+
+  while (number10 >= 0) {
+    if (number10 % 2 == 0) {
+      print("Парне число: $number10");
+    } else {
+      print("Непарне число: $number10");
+    }
+    number10--;
+  }
 }
