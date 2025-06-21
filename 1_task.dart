@@ -1,3 +1,5 @@
+import 'dart:mirrors';
+
 void main() {
   double rectangle_length = 18.4;
   double rectangle_width = 30.9;
@@ -20,8 +22,8 @@ void main() {
 
   bool hasMoney = true, isStoreOpen = false;
 
-  bool we_can_buy = hasMoney && isStoreOpen;
-  bool we_must_wait = hasMoney && !isStoreOpen;
+  bool weCanBuy = hasMoney && isStoreOpen;
+  bool weMustWait = hasMoney && !isStoreOpen;
 
   print("Task 4: Ternary operator");
 
@@ -29,7 +31,7 @@ void main() {
 
   String weather = temperature > 25 ? "Тепло" : "Прохолодно";
   print(weather);
-  String extra = temperature < 10 ? "Дуже холодно" : "";
+  String extra = temperature < 10 ? "Дуже холодно" : weather;
   print(extra);
 
   print("Task 5: Assignment Operators");
@@ -66,35 +68,27 @@ void main() {
   }
 
   print("Task 7: Switch statement construction");
-  int dayNumber = 6; // змінюй значення від 1 до 7
+  int dayNumber = 7; // змінюй значення від 1 до 7
 
   switch (dayNumber) {
     case 1:
       print("Понеділок");
-      break;
     case 2:
       print("Вівторок");
-      break;
     case 3:
       print("Середа");
-      break;
     case 4:
       print("Четвер");
-      break;
     case 5:
       print("П’ятниця");
-      break;
     case 6:
-      print("Субота");
-      print("Вихідний день 🎉");
-      break;
     case 7:
-      print("Неділя");
+      dayNumber == 6 ? print("Субота") : print("Неділя");
       print("Вихідний день 🎉");
-      break;
     default:
       print("Невірний номер дня");
   }
+
   print("Task 8: For loops");
 
   print("Всі числа від 1 до 10:");
